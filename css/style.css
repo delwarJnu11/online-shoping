@@ -14,7 +14,7 @@ body {
 }
 .search-box {
   border: 1px solid rgb(3, 118, 211);
-  width: 281px;
+  width: 256px;
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
@@ -23,7 +23,7 @@ body {
 .search-button {
   padding: 10px 50px;
   border-radius: 25px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 #all-products {
   display: grid;
@@ -59,6 +59,10 @@ body {
 }
 .cart-main {
   padding-right: 30px;
+}
+/* Ratings design*/
+.ratings-color{
+  color: rgba(255, 123, 0, 0.876);
 }
 @media only screen and (max-width: 768px) {
   #all-products {
