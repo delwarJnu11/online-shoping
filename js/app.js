@@ -104,6 +104,9 @@ const loadDeatils = async (productId) => {
 };
 //Display Details function
 const displayDetails = (productDetails) => {
+  window.scrollTo(0, 60);
+  const detailsContainer = document.getElementById('product-details');
+  detailsContainer.textContent = '';
   const rating = productDetails.rating.rate;
   // star rating 
   const star1 = (rating > 4) ? 'fill-rate' : 'noRating';
@@ -130,5 +133,5 @@ const displayDetails = (productDetails) => {
     <h2>Price: $ ${productDetails.price}</h2>
     <button onclick="addToCart(${productDetails.price})" id="addToCart-btn" class="add-to-cart btn">add to cart</button>
   `;
-  document.getElementById('product-details').appendChild(div);
+  detailsContainer.appendChild(div);
 };
