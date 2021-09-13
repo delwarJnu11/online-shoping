@@ -56,13 +56,10 @@ body {
   height: 150px;
 }
 .product-title {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #414141;
+  margin-top:10px;
 }
-.product-category, .product-ratings, .total-ratings {
-  font-weight: 600;
-}
-
 .category-name {
   color: tomato;
 }

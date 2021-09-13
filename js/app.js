@@ -34,7 +34,7 @@ const showProducts = (products) => {
       </span> (${product.rating.rate})</p>
       <p class="total-ratings">Total Ratings: <i class="fas fa-user"></i><span class="ratings-number">${product.rating.count}</span></p>
       
-      <h2>Price: $ ${product.price}</h2>
+      <h3>Price: $ ${product.price}</h3>
       <button onclick="addToCart(${product.price})" id="addToCart-btn" class="add-to-cart btn">add to cart</button>
       <button onclick="loadDeatils('${product.id}')" id="details-btn" class="btn details">Details</button> </div>
       `;
@@ -120,17 +120,17 @@ const displayDetails = (productDetails) => {
       <img class="product-image" src=${productDetails.image}></img>
     </div>
     <h3 class="product-title">${productDetails.title}</h3>
-    <p class="product-category">Category: <span class="category-name">${productDetails.category}</span></p>
+    <p>Category: <span class="category-name">${productDetails.category}</span></p>
     <p>Description: ${productDetails.description}</p>
-    <p class="product-ratings">Ratings:<span>
+    <p>Ratings:<span>
       <i class="fas fa-star rating ${star1} ${star2} ${star3} ${star4}"></i>
       <i class="fas fa-star rating ${star1} ${star2} ${star3}"></i>
       <i class="fas fa-star rating ${star1} ${star2}"></i>
       <i class="fas fa-star rating ${star1}"></i>
       <i class="fas fa-star rating"></i>
       </span> (${productDetails.rating.rate})</p>
-      <p class="total-ratings">Total Ratings: <i class="fas fa-user"></i><span class="ratings-number">${productDetails.rating.count}</span></p>
-    <h2>Price: $ ${productDetails.price}</h2>
+      <p>Total Ratings: <i class="fas fa-user"></i><span class="ratings-number">${productDetails.rating.count}</span></p>
+    <h5>Price: $ ${productDetails.price}</h5>
     <button onclick="addToCart(${productDetails.price})" id="addToCart-btn" class="add-to-cart btn">add to cart</button>
   `;
   detailsContainer.appendChild(div);
