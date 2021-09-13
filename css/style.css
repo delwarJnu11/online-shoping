@@ -6,16 +6,14 @@ body {
 .heading{
   color: #ff5722;
 }
-/* search box start  */
+/* search part start  */
 .search-field {
-  border-radius: 50px;
+  border-radius: 25px;
   padding: 5px;
-  outline: none;
 }
 .search-button {
   background-color: #f58115;
   color: white;
-  padding: 10px 50px;
   border-radius: 25px;
 }
 .search-button:hover{
@@ -23,7 +21,7 @@ body {
   color:white;
   outline: none;
 }
-/* search box end */
+/* search part end */
 /* all products start  */
 #all-products {
   display: grid;
