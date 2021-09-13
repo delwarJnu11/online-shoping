@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Delwar Store</title>
+  <title>Online Shopping Zone</title>
   <!-- custom css -->
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Latest compiled and minified CSS -->
@@ -22,11 +22,13 @@
 </head>
 
 <body>
-  <header></header>
+  <header>
+    <h1 class="text-center fs-3">Welcome To <span class="heading">Online Shopping Zone</span></h1>
+  </header>
   <main class="main">
     <div class="search-field">
       <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
+        <input id="input-field" class="search-field" type="text" placeholder="search your product" />
         <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
           autocomplete="off" id="search-btn" onclick="loadProducts()">
           Search
@@ -84,7 +86,7 @@
             </tbody>
           </table>
           <div class="parces text-center">
-            <button class="btn btn-primary text-center">Buy Now</button>
+            <button class="btn buy-now text-center">Buy Now</button>
           </div>
         </div>
       </div>
