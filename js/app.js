@@ -1,3 +1,4 @@
+//Load Products
 const loadProducts = () => {
   const url = `https://fakestoreapi.com/products`;
   fetch(url)
@@ -18,10 +19,9 @@ const showProducts = (products) => {
     const star3 = (rating > 2 && rating <= 3) ? 'fill-rate' : 'noRating';
     const star4 = (rating > 1 && rating <= 2) ? 'fill-rate' : 'noRating';
     const div = document.createElement("div");
-    // div.classList.add("product");
     div.innerHTML = `<div class="single-product">
       <div>
-    <img class="product-image" src=${image}></img>
+        <img class="product-image" src=${image}></img>
       </div>
       <h3 class="product-title">${product.title}</h3>
       <p class="product-category">Category: <span class="category-name">${product.category}</span></p>
