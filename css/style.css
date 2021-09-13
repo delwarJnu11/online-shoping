@@ -56,6 +56,11 @@ body {
   border-radius: 10px;
   border: 1px solid cyan;
 }
+.product-detail{
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
 .product-image {
   width: 150px;
   height: 150px;
